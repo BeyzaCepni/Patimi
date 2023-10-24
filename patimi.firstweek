@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patimi</title> 
+  
+</head>
+
+<body>
+    <div class="o-header">
+        <a class="navbar-brand">
+            <img src="data:image/jpeg;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+            Patimi</a>
+
+            <div class="buttons">
+                <div class="buttons1">
+                    <a href="hakkimizda">Hakkımızda</a>
+                    <a href="iletisim">İletişim</a>
+                </div>
+                <div class="search">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="search-button">Search</a>
+                    </form>
+                </div>
+                <div class="buttons2">
+                    <a href="signup-button">Signup</a>
+                    <a href="login-button">Login</a>
+                </div>
+            </div>
+            
+    </div>
+
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="#perte">Perte</a>
+            <a href="#adoption">Adoption</a>
+            <a href="#hebergement-temporaire">Hébergement Temporaire</a>
+            <a href="#carte-des-magasins">Carte des Magasins</a>
+            <a href="#blog">Blog</a>
+        </div>
+        
+    </div>
+
+</body>
+
+<style>
+    
+   
+    body { 
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FAF3F0; 
+    }  
+    
+    .o-header{
+        background-color: rgb(138, 202, 138) ;
+        margin: 0 auto; 
+        height: 100px;
+    }
+
+    .navbar-brand {
+        color: white; 
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 10px;
+        background-color: rgb(146, 84, 85); 
+        transition: background-color 0.3s ease;    
+    }
+
+    .buttons {
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%; 
+        padding: 10px 220px;
+        
+    }
+    .buttons a {
+        color: white; 
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: rgb(188, 133, 135); 
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+        background-color: #238045;
+    }
+
+    .search {
+        background-color: rgb(146, 84, 85);
+        padding: 14px 20px;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .search a {
+        color: white; 
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 10px;
+        background-color: rgb(188, 133, 135); 
+        transition: background-color 0.3s ease;  
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(212, 226, 212);
+        border-radius: 10px;
+        margin: 20px;
+        max-width: 960px; 
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .navbar {
+        overflow: hidden;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        color: white; 
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: rgb(188, 133, 135); 
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+        background-color: #238045;
+    }
+</style>
+
+</html>
