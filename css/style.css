@@ -547,7 +547,6 @@ button {
 
 /* coffee section end */
 
-
 /* about section start */
 
 .about_section {
@@ -860,7 +859,7 @@ textarea#comment.massage-bt::placeholder {
     width: 100%;
     float: left;
     height: auto;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../images/footer-bg1.png);
     background-size: 100% 100%;
     padding: 90px 0px 0px 0px;
 }
