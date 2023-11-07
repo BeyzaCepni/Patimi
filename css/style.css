@@ -1035,6 +1035,7 @@ textarea#comment.update_mail::placeholder {
 
 /* copyright section end */
 
+/* HEAD */
 /*Login section starts*/
 
 .login_section body {
@@ -1258,3 +1259,109 @@ textarea#comment.update_mail::placeholder {
 	height: 40px;
 	width: 40px;
 }
+
+.margin_top90 {
+    margin-top: 90px;
+}
+
+
+
+
+.nav-item>li>.dropdown-menu {
+    border-radius:6px;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover{
+    color:#121212;
+    background-color:#fff;
+  }
+  
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #fff;
+      background-color: rgb(216, 84, 84);
+  
+  }
+  
+  .dropdown-menu>li>a:hover {
+      color: #c9c3c3;
+      text-decoration: none;
+      background-color: #121212;
+  }
+  
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+      color: #fff;
+      background-color: #d71919;
+  }
+  
+  .dropdown-menu>li>a {
+      color: #000;
+  }
+  
+  @media screen and (max-width:768px) and (min-width:100px) {
+    
+    .main{
+      width:125%;
+    }
+   .navbar-default .navbar-nav > li > a {
+      color: #fff;
+      outline: none;
+     overflow:hidden;
+  }
+    .navbar {
+    overflow:hidden;
+      width:25%;
+  }
+    .navbar ul li{
+      position:relative;
+    }
+      .navbar ul li a{
+        margin-left: 15px;
+        
+      }
+      .navbar ul li:active {
+     color:green;
+      }
+    
+    
+    .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+    
+  .navbar-nav .open .dropdown-menu>li:hover a{
+      
+      background-color: transparent;
+    margin-left:32px;
+    color:#fff !important;
+    
+  }
+    .nav-item .open .dropdown-menu>li:hover:before{
+      font:normal normal normal 14px/1 FontAwesome;
+      content:'\f054';
+       width: 100px;
+      height:100px;
+      position:absolute;
+      left:18%;
+      top:46%;
+      transform:translate(-50%,-50%);
+      color:#e14444;
+   
+      
+    }
+    
+    
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #e14444;
+  }
+}
+
+
+
+
+
