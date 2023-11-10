@@ -860,7 +860,7 @@ textarea#comment.massage-bt::placeholder {
     height: auto;
     background-image: url(../images/footer-bg1.png);
     background-size: 100% 100%;
-    padding: 30px 0px 40px 0px;
+    padding: 30px px 40px 0px;
 }
 
 .address_text {
@@ -1037,6 +1037,29 @@ textarea#comment.update_mail::placeholder {
 
 /*Login section starts*/
 
+.login_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+
+.login_section_2 {
+    width: 100%;
+    float: left;
+    padding: 60px;
+}
+
+.login_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
 .login_section body {
     box-sizing: border-box;
 	background: #f6f5f7;
@@ -1099,8 +1122,16 @@ textarea#comment.update_mail::placeholder {
 }
 
 .ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+	border-radius: 20px;
+	border: 1px solid #FFFFFF;
+	background-color: #005b5c;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
 }
 
 .login_section form {
@@ -1132,6 +1163,7 @@ textarea#comment.update_mail::placeholder {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+    left: 350px;
 }
 
 .form-containerLogin {
@@ -1194,8 +1226,8 @@ textarea#comment.update_mail::placeholder {
 
 .overlay {
 	background: #005b5c;
-	background: -webkit-linear-gradient(to right, #005b5c, #47817d);
-	background: linear-gradient(to right, #005b5c, #47817d);
+	background: -webkit-linear-gradient(to right, #47817d);
+	background: linear-gradient(to right, #47817d);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
