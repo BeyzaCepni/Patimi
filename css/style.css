@@ -1124,7 +1124,7 @@ textarea#comment.update_mail::placeholder {
 .ghost {
 	border-radius: 20px;
 	border: 1px solid #FFFFFF;
-	background-color: #005b5c;
+	background-color: #47817d;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -1225,7 +1225,7 @@ textarea#comment.update_mail::placeholder {
 }
 
 .overlay {
-	background: #005b5c;
+	background: #47817d;
 	background: -webkit-linear-gradient(to right, #47817d);
 	background: linear-gradient(to right, #47817d);
 	background-repeat: no-repeat;
