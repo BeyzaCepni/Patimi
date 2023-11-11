@@ -32,6 +32,7 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
+    background-blend-mode: 0.4;
 }
 
 a {
@@ -91,6 +92,8 @@ h6 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
+
 }
 
 h1 a,
@@ -1290,6 +1293,105 @@ textarea#comment.update_mail::placeholder {
     
 }
 /* dropdown services menu ends*/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+    background-color: #47817d;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+.bg-primary {
+    background-color: #df828a !important;
+}
+
+.py-1 {
+    padding-top: .25rem !important;
+    padding-bottom: .25rem !important;
+}
+
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.ms-4 {
+    margin-left: 1.5rem !important;
+}
+
+.translate-middle-y {
+    transform: translateY(-50%) !important;
+}
+
+.start-0 {
+    right: 0 !important;
+}
+
+.top-100 {
+    top: 0 !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+small, .small {
+    font-size: 1.1em;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    line-height: .5;
+    font-weight: 650;
+    color: #005b5c;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #df828a;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out 0.15s, box-shadow 0.15s ease-in-out;
+}
 
 
 
