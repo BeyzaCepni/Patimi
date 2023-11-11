@@ -1043,23 +1043,6 @@ textarea#comment.update_mail::placeholder {
     padding-bottom: 90px;
 }
 
-.login_section_2 {
-    width: 100%;
-    float: left;
-    padding: 60px;
-}
-
-.login_taital {
-    width: 100%;
-    float: left;
-    font-size: 40px;
-    color: #3b3b3b;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 0px;
-}
-
 .login_section body {
     box-sizing: border-box;
 	background: #f6f5f7;
@@ -1289,4 +1272,57 @@ textarea#comment.update_mail::placeholder {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+
+
+.ocean {
+    height: 5%;
+    width:100%;
+    position:relative;
+    bottom:0;
+    left:0;
+    background: #005b5c;
+}
+
+.wave {
+    background: url(file:///C:/Users/user/Downloads/5c68ff3d40604fee99a087b518698829.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+
+/*login section ends*/
+
+/*map section starts*/
+.map {
+    height: 400px;
+    width: 100%;
 }
