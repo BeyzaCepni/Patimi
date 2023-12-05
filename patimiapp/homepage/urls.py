@@ -15,13 +15,13 @@ from. import views
  
 urlpatterns = [
     path("",views.index),
-    path("index",views.index),
-    path("patimibuldun",views.patimibuldun),
-    path("patimisahiplen",views.patimisahiplen),
-    path("patimibakilacak",views.patimibakilacak),
-    path("patimiyakinimda",views.patimiyakinimda),
-    path("iletisim",views.iletisim),
-    path("hakkimizda",views.hakkimizda),
-    path("blog",views.blog),
+    path("index.html",views.index),
+    path("PatimiBuldun.html",views.patimibuldun),
+    path("PatimiSahiplen.html",views.patimisahiplen),
+    path("PatimiBakilacak.html",views.patimibakilacak),
+    path("PatimiYakinimda.html",views.patimiyakinimda),
+    path("contact.html",views.iletisim),
+    path("about.html",views.hakkimizda),
+    path("blog.html",views.blog),
  ]
  
