@@ -96,8 +96,8 @@
                                  <h5 class="tasty_text">Patili dostlarınızla ilgili her şey</h5>
                                  <p class="banner_text">Yeni bir dost edinmek ve daha fazlası için</p>
                                  <div class="btn_main">
-                                    <div class="about_bt"><a href="#">Bilgi edinin</a></div>
-                                    <div class="callnow_bt active"><a href="#">İletişime geçin</a></div>
+                                    <div class="about_bt"><a href="about.html">Bilgi edinin</a></div>
+                                    <div class="callnow_bt active"><a href="contact.html">İletişime geçin</a></div>
                                  </div>
                               </div>
                            </div>
@@ -114,8 +114,8 @@
                                  <h5 class="tasty_text">Patili dostlarınızla ilgili her şey</h5>
                                  <p class="banner_text">Kayıp ilanlarınızı paylaşmak ve daha fazlası için</p>
                                  <div class="btn_main">
-                                    <div class="about_bt"><a href="#">Bilgi edinin</a></div>
-                                    <div class="callnow_bt active"><a href="#">İletişime geçin</a></div>
+                                    <div class="about_bt"><a href="about.html">Bilgi edinin</a></div>
+                                    <div class="callnow_bt active"><a href="contact.html">İletişime geçin</a></div>
                                  </div>
                               </div>
                            </div>
@@ -132,8 +132,8 @@
                                  <h5 class="tasty_text">Patili dostlarınızla ilgili her şey</h5>
                                  <p class="banner_text">Kendi blogunuzu oluşturup paylaşım yapmak ve daha fazlası için</p>
                                  <div class="btn_main">
-                                    <div class="about_bt"><a href="#">Bilgi edinin</a></div>
-                                    <div class="callnow_bt active"><a href="#">İletişime geçin</a></div>
+                                    <div class="about_bt"><a href="about.html">Bilgi edinin</a></div>
+                                    <div class="callnow_bt active"><a href="contact.html">İletişime geçin</a></div>
                                  </div>
                               </div>
                            </div>
@@ -169,25 +169,25 @@
                               <div class="coffee_img"><img src="{% static "images/3.png" %}"></div>
                               <h3 class="types_text">Patimi sahiplen</h3>
                               <p class="looking_text">Evcil hayvan sahiplenmek veya sahiplendirmek mi istiyorsun?</p>
-                              <div class="read_bt"><a href="#">Keşfet</a></div>
+                              <div class="read_bt"><a href="PatimiSahiplen.html">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
                               <div class="coffee_img"><img src="{% static "images/1.png" %}"></div>
                               <h3 class="types_text">Patimi buldun?</h3>
                               <p class="looking_text">Evcil hayvanını mı kaybettin ya da bir evcil hayvan mı buldun?</p>
-                              <div class="read_bt"><a href="#">Keşfet</a></div>
+                              <div class="read_bt"><a href="PatimiBuldun.html">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
                               <div class="coffee_img"><img src="{% static "images/2.png" %}"></div>
                               <h3 class="types_text">Patimi bakılacak</h3>
                               <p class="looking_text">Evcil hayvanın için geçici bir yuva mı arıyorsun?</p>
-                              <div class="read_bt"><a href="#">Keşfet</a></div>
+                              <div class="read_bt"><a href="PatimiBakilacak.html">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
                               <div class="coffee_img"><img src="{% static "images/5.png" %}"></div>
                               <h3 class="types_text">Patimi konuşalım</h3>
                               <p class="looking_text">Evcil hayvanlar hakınnda sohbet mi etmek istiyorsun?</p>
-                              <div class="read_bt"><a href="#">Keşfet</a></div>
+                              <div class="read_bt"><a href="blog.html">Keşfet</a></div>
                            </div>
                         </div>
                      </div>
@@ -199,7 +199,7 @@
                               <div class="coffee_img"><img src="{% static "images/4.png" %}"></div>
                               <h3 class="types_text">Patimi yakınımda ne var?</h3>
                               <p class="looking_text">Yakınındaki veteriner ve petshopları mı arıyorsun?</p>
-                              <div class="read_bt"><a href="#">Keşfet</a></div>
+                              <div class="read_bt"><a href="PatimiYakinimda.html">Keşfet</a></div>
                            </div>
                         </div>
                      </div>
@@ -447,13 +447,14 @@
          </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="{% static "js/jquery.min.js" %}"></script>
+      <script src="{% static "js/popper.min.js" %}"></script>
+      <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+      <script src="{% static "js/jquery-3.0.0.min.js" %}"></script>
+      <script src="{% static "js/plugin.js" %}"></script>
+      <script src="{% static "js/login.js" %}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+      <script src="{% static "js/custom.js" %}"></script>
    </body>
 </html>

@@ -26,5 +26,6 @@ urlpatterns = [
     path("loginPage.html",views.loginPage),
     path("profil.html",views.profil),
     path("profilEdit.html",views.profilEdit),
+    path("ilan_details.html",views.ilanDetails),
  ]
  

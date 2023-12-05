@@ -35,5 +35,8 @@ def profil(request):
 def profilEdit(request):
     return render(request,"profilEdit.html")
 
+def ilanDetails(request):
+    return render(request,"ilan_details.html")
+
 
 
