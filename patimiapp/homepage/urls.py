@@ -23,5 +23,8 @@ urlpatterns = [
     path("contact.html",views.iletisim),
     path("about.html",views.hakkimizda),
     path("blog.html",views.blog),
+    path("loginPage.html",views.loginPage),
+    path("profil.html",views.profil),
+    path("profilEdit.html",views.profilEdit),
  ]
  

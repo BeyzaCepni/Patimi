@@ -26,5 +26,14 @@ def hakkimizda(request):
 def blog(request):
     return render(request,"blog.html")
 
+def loginPage(request):
+    return render(request,"loginPage.html")
+
+def profil(request):
+    return render(request,"profil.html")
+
+def profilEdit(request):
+    return render(request,"profilEdit.html")
+
 
 
