@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -14,17 +16,17 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{% static "css/responsive.css" %}">
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- font css -->
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css" %}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
@@ -32,7 +34,7 @@
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand" href="index.html"><img src="images/Patimi-logo.png"></a>
+               <a class="navbar-brand" href="index.html"><img src="{% static "images/Patimi-logo.png"%}"></a>
                <a class="navbar-brand" href="index.html">PATİMİ</a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -86,7 +88,7 @@
                      <div class="carousel-item active">
                         <div class="row">
                            <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-cats.png"></div>
+                              <div class="banner_img"><img src="{% static "images/banner-cats.png" %}"></div>
                            </div>
                            <div class="col-md-6">
                               <div class="banner_taital_main">
@@ -104,7 +106,7 @@
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-catdog.png"></div>
+                              <div class="banner_img"><img src="{% static "images/banner-catdog.png" %}"></div>
                            </div>
                            <div class="col-md-6">
                               <div class="banner_taital_main">
@@ -122,7 +124,7 @@
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-birds.png"></div>
+                              <div class="banner_img"><img src="{% static "images/banner-birds.png" %}"></div>
                            </div>
                            <div class="col-md-6">
                               <div class="banner_taital_main">
@@ -154,7 +156,7 @@
          <div class="container">
             <div class="row">
                <h1 class="coffee_taital" id="hizmet">Hizmetlerimiz</h1>
-               <div class="bulit_icon"><img src="images/bulit-icon1.png"></div>
+               <div class="bulit_icon"><img src="{% static "images/bulit-icon1.png" %}"></div>
             </div>
          </div>
          <div class="coffee_section_2">
@@ -164,25 +166,25 @@
                      <div class="container-fluid">
                         <div class="row">
                            <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/3.png"></div>
+                              <div class="coffee_img"><img src="{% static "images/3.png" %}"></div>
                               <h3 class="types_text">Patimi sahiplen</h3>
                               <p class="looking_text">Evcil hayvan sahiplenmek veya sahiplendirmek mi istiyorsun?</p>
                               <div class="read_bt"><a href="#">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/1.png"></div>
+                              <div class="coffee_img"><img src="{% static "images/1.png" %}"></div>
                               <h3 class="types_text">Patimi buldun?</h3>
                               <p class="looking_text">Evcil hayvanını mı kaybettin ya da bir evcil hayvan mı buldun?</p>
                               <div class="read_bt"><a href="#">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/2.png"></div>
+                              <div class="coffee_img"><img src="{% static "images/2.png" %}"></div>
                               <h3 class="types_text">Patimi bakılacak</h3>
                               <p class="looking_text">Evcil hayvanın için geçici bir yuva mı arıyorsun?</p>
                               <div class="read_bt"><a href="#">Keşfet</a></div>
                            </div>
                            <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/5.png"></div>
+                              <div class="coffee_img"><img src="{% static "images/5.png" %}"></div>
                               <h3 class="types_text">Patimi konuşalım</h3>
                               <p class="looking_text">Evcil hayvanlar hakınnda sohbet mi etmek istiyorsun?</p>
                               <div class="read_bt"><a href="#">Keşfet</a></div>
@@ -194,7 +196,7 @@
                      <div class="container-fluid">
                         <div class="row">
                            <div class="col-lg-3 col-md-6">
-                              <div class="coffee_img"><img src="images/4.png"></div>
+                              <div class="coffee_img"><img src="{% static "images/4.png" %}"></div>
                               <h3 class="types_text">Patimi yakınımda ne var?</h3>
                               <p class="looking_text">Yakınındaki veteriner ve petshopları mı arıyorsun?</p>
                               <div class="read_bt"><a href="#">Keşfet</a></div>
@@ -219,14 +221,14 @@
             <div class="row">
                <div class="col-md-12">
                   <h1 class="about_taital">Blog</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon1.png"></div>
+                  <div class="bulit_icon"><img src="{% static "images/bulit-icon1.png" %}"></div>
                </div>
             </div>
             <div class="blog_section_2">
                <div class="row">
                   <div class="col-md-6">
                      <div class="blog_box">
-                        <div class="blog_img"><img src="images/two-cats.jpg"></div>
+                        <div class="blog_img"><img src="{% static "images/two-cats.jpg" %}"></div>
                         <h4 class="date_text">19 Nisan</h4>
                         <h4 class="prep_text">ÇOK KEDİLİ EV İPUÇLARI: ÇOK KEDİ ARASINDA BARIŞI KORUMAK</h4>
                         <p class="lorem_text">Çok kedili evler iki veya üç kat neşe getirir ve çoğu zaman iki veya üç kat sorumluluk getirir. Alıngan kedi aileniz arasında uyumu sürdürmek, zorlayıcı bir görev olmak zorunda değil; Doğru ipuçları ve bilgilerle, bu konuda uzman olacaksınız.</p>
@@ -235,7 +237,7 @@
                   </div>
                   <div class="col-md-6">
                      <div class="blog_box">
-                        <div class="blog_img"><img src="images/dog.jpg"></div>
+                        <div class="blog_img"><img src="{% static "images/dog.jpg" %}"></div>
                         <h4 class="date_text">23 Nisan</h4>
                         <h4 class="prep_text">HARLEY KURTARILIYOR: MUHTEŞEM BİR YAVRU DEĞİRMENİ HAYATTA KALMA HİKAYESİ 
 
@@ -255,7 +257,7 @@
             <div class="row">
                <div class="col-sm-12">
                   <h1 class="contact_taital">Bizimle iletişime geçin</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon1.png"></div>
+                  <div class="bulit_icon"><img src="{% static "images/bulit-icon1.png" %}"></div>
                </div>
             </div>
          </div>
@@ -363,7 +365,7 @@
                   </div>
                   <div class="form-group">
                      <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
+                     <div class="subscribe_bt"><a href="#"><img src="{% static "images/teligram-icon.png" %}"></a></div>
                   </div>
                </div>
             </div>

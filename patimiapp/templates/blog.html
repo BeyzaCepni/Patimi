@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -9,22 +11,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Hakkımızda</title>
+      <title>Blog</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{% static "css/responsive.css" %}">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{% static "images/fevicon.png" %}" type="image/gif" />
       <!-- font css -->
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css" %}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
@@ -32,7 +34,7 @@
       <div class="header_section header_bg">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand" href="index.html"><img src="images/Patimi-logo.png"></a>
+               <a class="navbar-brand" href="index.html"><img src="{% static "images/Patimi-logo.png" %}"></a>
                <a class="navbar-brand" href="index.html">PATİMİ</a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -42,7 +44,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="index.html">ANA SAYFA</a>
                      </li>
-                    
+                     
                      <li class="nav-item">
                         <li class="services-li">
                            <a class="nav-link" >HİZMETLERİMİZ</a>
@@ -57,7 +59,8 @@
                         </div>
                         </li>    
                      </li>
-                     <!--<li class="nav-item">
+                     <!--
+                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">BLOG</a>
                      </li>
                   -->
@@ -81,26 +84,42 @@
          </div>
       </div>
       <!-- header section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
+      <!-- blog section start -->
+      <div class="blog_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="about_taital">Patimi Hakkında</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon1.png"></div>
+                  <h1 class="about_taital">Patimi Konusalim</h1>
+                  <div class="bulit_icon"><img src="{% static "images/bulit-icon1.png" %}"></div>
                </div>
             </div>
-            <div class="about_section_2 layout_padding">
-               <div class="image_iman"><img src="images/hakkımızda.jpg" class="about_img"></div>
-               <div class="about_taital_box">
-                  <h1 class="about_taital_1">Biz kimiz?</h1>
-                  <p class=" about_text">Biz Galatasaray Üniversitesi bilgisayar mühendisliği öğrencileri olarak kurduğumuz bu sitede evcil hayvanların daha çok önemsenmesini ve insanların evcil hayvanları ile ilgili problemlerinin daha çabuk giderilmesini amaçlıyoruz.  </p>
-                  <div class="readmore_btn"><a href="#">Daha fazla</a></div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="{% static "images/dog.jpg" %}"></div>
+                        <h4 class="date_text">23 Nisan</h4>
+                        <h4 class="prep_text">HARLEY KURTARILIYOR: MUHTEŞEM BİR YAVRU DEĞİRMENİ HAYATTA KALMA HİKAYESİ 
+
+                        </h4>
+                        <p class="lorem_text">Harley ile tanışın! Bu kıymetli küçük Chihuahua, hayatının ilk on yılını yavru yetiştirme çiftliğinde üreyen bir erkek olarak küçük bir tel kafese tıkılmış olarak geçirdi. Yavru köpek fabrikalarında çok yaygın olan korkunç yaşam koşullarından sağ kurtuldu.</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Daha Fazla</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="{% static "images/two-cats.jpg" %}"></div>
+                        <h4 class="date_text">19 Nisan</h4>
+                        <h4 class="prep_text">ÇOK KEDİLİ EV İPUÇLARI: ÇOK KEDİ ARASINDA BARIŞI KORUMAK</h4>
+                        <p class="lorem_text">Çok kedili evler iki veya üç kat neşe getirir ve çoğu zaman iki veya üç kat sorumluluk getirir. Alıngan kedi aileniz arasında uyumu sürdürmek, zorlayıcı bir görev olmak zorunda değil; Doğru ipuçları ve bilgilerle, bu konuda uzman olacaksınız.</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Daha Fazla</a></div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- about section end -->
+      <!-- blog section end -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
@@ -122,7 +141,7 @@
                   </div>
                   <div class="form-group">
                      <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
+                     <div class="subscribe_bt"><a href="#"><img src="{% static "images/teligram-icon.png" %}"></a></div>
                   </div>
                </div>
             </div>
