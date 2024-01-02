@@ -153,27 +153,12 @@
              </div>
          -->
              <div class="row g-4" style="background-color: rgba(255, 255, 255, 0.2)">
-                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #fff;">
-                     <div class="room-item shadow rounded overflow-hidden">
-                         <div class="position-relative">
-                             <img class="img-fluid" src="{% static "images/golden.jpg" %}" width=408px >
-                             <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">09/10/2023</small>
-                         </div>
-                         <div class="p-4 mt-2">
-                             <div class="d-flex justify-content-between mb-3">
-                                 <h5 class="mb-0">Golden Retriever Köpek</h5>
-                             </div>
-                             <div class="d-flex mb-3">
-                                 <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>Kadıköy</small>
-                                 <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>/İstanbul</small>
-                             </div>
-                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                             <div class="d-flex justify-content-between">
-                                 <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">İncele</a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
+               {% for ilanlar in ilan %}
+                  {% include 'partials/_ilan_content.html' %}
+               {% endfor %}
+
+               {% include 'partials/_ilan_content.html' %}
+               {% include 'partials/_ilan_content.html' %}
                  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="background-color: #fff;">
                      <div class="room-item shadow rounded overflow-hidden">
                          <div class="position-relative">
@@ -190,7 +175,7 @@
                              </div>
                              <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                              <div class="d-flex justify-content-between">
-                                 <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">İncele</a>
+                                 <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{% url 'ilandetails' 1 %}">İncele</a>
                              </div>
                          </div>
                      </div>
@@ -235,7 +220,7 @@
                         </li>
                         <li>
                            <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">info.patimi@gmail.com</span>
                            </a>
                         </li>
                      </ul>

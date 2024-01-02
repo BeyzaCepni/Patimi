@@ -65,15 +65,15 @@
             <div class="header_section header_bg">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html"><img src="{% static "images/Patimi-logo.png" %}"></a>
-                    <a class="navbar-brand" href="index.html">PATİMİ</a>
+                    <a class="navbar-brand" href="{% url 'homepage'  %}"><img src="{% static "images/Patimi-logo.png" %}"></a>
+                    <a class="navbar-brand" href="{% url 'homepage'  %}">PATİMİ</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">ANA SAYFA</a>
+                            <a class="nav-link" href="{% url 'homepage'  %}">ANA SAYFA</a>
                         </li>
                         
                         <li class="nav-item">
@@ -81,11 +81,11 @@
                                 <a class="nav-link" >HİZMETLERİMİZ</a>
                             <div id="services-content">
                                 <ul>
-                                    <li style="display: block;"><a href="PatimiSahiplen.html">Patimi Sahiplen</a></li>
-                                    <li style="display: block;"><a href="PatimiBuldun.html">Patimi Buldun</a></li>
-                                    <li style="display: block;"><a href="PatimiBakilacak.html">Patimi Bakılacak</a></li>
-                                    <li style="display: block;"><a href="blog.html">Patimi Konuşalım</a></li>
-                                    <li style="display: block;"><a href="PatimiYakinimda.html">Patimi Yakınımda</a></li>
+                                    <li style="display: block;"><a href="{% url 'patimisahiplen'  %}">Patimi Sahiplen</a></li>
+                                    <li style="display: block;"><a href="{% url 'patimibuldun'  %}">Patimi Buldun</a></li>
+                                    <li style="display: block;"><a href="{% url 'patimibakilacak'  %}">Patimi Bakılacak</a></li>
+                                    <li style="display: block;"><a href="{% url 'patimikonusalim'  %}">Patimi Konuşalım</a></li>
+                                    <li style="display: block;"><a href="{% url 'patimiyakinimda'  %}">Patimi Yakınımda</a></li>
                                 </ul>
                             </div>
                             </li>    
@@ -96,17 +96,17 @@
                         </li>
                         -->
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">İLETİŞİM</a>
+                            <a class="nav-link" href="{% url 'iletisim'  %}">İLETİŞİM</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+                            <a class="nav-link" href="{% url 'hakkimizda'  %}">HAKKIMIZDA</a>
                         </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
                         <div class="login_bt">
                             <ul>
-                                <li><a href="loginPage.html"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>GİRİŞ</a></li>
-                                <li><a href="loginPage.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                <li><a href="{% url 'loginpage'  %}"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>GİRİŞ</a></li>
+                                <li><a href="{% url 'loginpage'  %}"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                         </form>
@@ -156,7 +156,7 @@
                                 </li>
                                 <li>
                                 <a href="#">
-                                <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
+                                <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">info.patimi@gmail.com</span>
                                 </a>
                                 </li>
                             </ul>
