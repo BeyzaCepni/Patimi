@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social_django',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -48,7 +51,23 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    # ...
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_cor.backends.google.GoogleOAuth'
+    # ...
+)
+
+SOCIAL_AUTH_TWITTER_KEY = 'nGOvytggI0D0v9pHZSiFMDlaa'
+SOCIAL_AUTH_TWITTER_SECRET = 'Vn9GyEjvDCkMwk1u14ofC1jEqJNe7DbclSrARcqLFeyJtiOIrT'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'Client ID'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Client Secret'
+
+
 
 ROOT_URLCONF = 'patimiapp.urls'
 

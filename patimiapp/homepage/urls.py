@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from. import views
 
 
@@ -27,5 +27,7 @@ urlpatterns = [
     path("profil.html",views.profil, name= "profil"),
     path("profilEdit.html",views.profilEdit, name= "profiledit"),
     path("ilandetail/<int:id>",views.ilanDetails, name= "ilandetails"),
+    path('social-auth/', include('social_django.urls', namespace='social')),
+
  ]
  
